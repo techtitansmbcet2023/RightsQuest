@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rights_quest/views/chapters_tab.dart';
 import 'package:rights_quest/views/home.dart';
+import 'package:rights_quest/views/user_tab.dart';
 import 'package:rights_quest/widgets/top_app_bar.dart';
 
 class App extends StatelessWidget {
@@ -79,11 +80,7 @@ class _HomePageState extends State<HomePage> {
 
           ChaptersTab(),
 
-          Container(
-            color: Colors.blue,
-            alignment: Alignment.center,
-            child: const Text('Page 3'),
-          ),
+          UserTab(),
         ][currentPageIndex],
       ),
     );
