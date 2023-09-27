@@ -6,15 +6,21 @@ class BadgesTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  ListView(
-      children: [
-        SizedBox(height: 5,),
-        Badges(),
-        SizedBox(height: 10,),
-        Badges(),
-
-        SizedBox(height: 5,),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0), // Add horizontal padding
+      child: ListView.builder(
+        itemCount: 5, // Change the itemCount to 5
+        itemBuilder: (BuildContext context, int index) {
+          return Column(
+            children: [
+              SizedBox(height: 5),
+              Badges(),
+              SizedBox(height: 10),
+            ],
+          );
+        },
+      ),
     );
   }
 }
+
