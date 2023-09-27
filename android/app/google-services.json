@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1040658169835",
+    "firebase_url": "https://rightsquest-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "rightsquest",
+    "storage_bucket": "rightsquest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040658169835:android:41770a6fd3651fdc2c23ae",
+        "android_client_info": {
+          "package_name": "com.TechTitans.rights_quest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKuAYrJOHSP_LgmfljryVD82UQkOMEATw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
