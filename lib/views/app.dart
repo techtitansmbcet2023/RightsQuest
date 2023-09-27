@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rights_quest/views/home.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -32,6 +33,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("GAMEE"),
+        backgroundColor: Colors.lightGreen,
+      ),
       bottomNavigationBar: NavigationBar(
         onDestinationSelected: (int index) {
           setState(() {
@@ -58,23 +63,21 @@ class _HomePageState extends State<HomePage> {
             ],
       ),
 
-      body: <Widget>[
-        Container(
-          color: Colors.red,
-          alignment: Alignment.center,
-          child: const Text('Page 1'),
-        ),
-        Container(
-          color: Colors.green,
-          alignment: Alignment.center,
-          child: const Text('Page 2'),
-        ),
-        Container(
-          color: Colors.blue,
-          alignment: Alignment.center,
-          child: const Text('Page 3'),
-        ),
-      ][currentPageIndex],
+      body: SafeArea(
+        child: <Widget>[
+          Home(),
+          Container(
+            color: Colors.green,
+            alignment: Alignment.center,
+            child: const Text('Page 2'),
+          ),
+          Container(
+            color: Colors.blue,
+            alignment: Alignment.center,
+            child: const Text('Page 3'),
+          ),
+        ][currentPageIndex],
+      ),
     );
   }
 }
