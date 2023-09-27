@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rights_quest/widgets/current_chapter_card.dart';
+import 'package:rights_quest/widgets/progress_track_card.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -16,6 +17,8 @@ class _HomeState extends State<Home> {
       child: ListView(
         children: [
           CurrentChapterCard(),
+          SizedBox(height: 16), // Add space between the cards (adjust the height as needed)
+          ProgressTrackCard(),
         ],
       ),
     );
