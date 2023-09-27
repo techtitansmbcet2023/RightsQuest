@@ -16,7 +16,10 @@ class _HomeState extends State<Home> {
       padding: const EdgeInsets.all(8.0),
       child: ListView(
         children: [
-          CurrentChapterCard(),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8.0), // Add vertical padding
+            child: CurrentChapterCard(),
+          ),
           SizedBox(height: 16), // Add space between the cards (adjust the height as needed)
           ProgressTrackCard(),
         ],

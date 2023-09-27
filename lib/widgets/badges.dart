@@ -7,11 +7,11 @@ class Badges extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(5.0),
       child: Container(
         width: double.infinity,
         height: 200,
-        decoration: BoxDecoration(color: Colors.lime,borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.black,width: 2),
+        decoration: BoxDecoration(color: Colors.cyan[300],borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.black,width: 2),
       ),
     ),
     );
