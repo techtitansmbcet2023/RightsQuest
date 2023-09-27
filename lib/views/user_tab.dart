@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rights_quest/widgets/settings.dart';
 
 class UserTab extends StatelessWidget {
   const UserTab({super.key});
@@ -6,7 +7,7 @@ class UserTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Padding(
-      padding: EdgeInsets.all(8),
+      padding: EdgeInsets.all(15),
 
       child: ListView(
         children: [
@@ -25,12 +26,23 @@ class UserTab extends StatelessWidget {
                     SizedBox(width: 30,),
 
                     Flexible(child: Text("Hello name ",softWrap: true,)),
+
                   ],
                 ),
               ),
             ),
-          )
+          ),
+
+          SizedBox(height: 10),
+          Settings(settingName: "Settings",),
+
+          SizedBox(height: 10),
+          Settings(settingName: "Language",),
+
+          SizedBox(height: 10),
+          Settings(settingName: "Theme Mode",),
         ],
+
       ),
     );
   }
