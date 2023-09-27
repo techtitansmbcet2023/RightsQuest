@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rights_quest/views/badges.dart';
 import 'package:rights_quest/views/chapters_tab.dart';
 import 'package:rights_quest/views/home.dart';
 import 'package:rights_quest/views/user_tab.dart';
@@ -68,6 +69,11 @@ class _HomePageState extends State<HomePage> {
             label: 'Chapters',
           ),
           NavigationDestination(
+            selectedIcon: Icon(Icons.mediation, size: 40,),
+            icon: Icon(Icons.mediation_outlined, size: 30,),
+            label: 'Badges',
+          ),
+          NavigationDestination(
             selectedIcon: Icon(Icons.account_circle, size: 40,),
             icon: Icon(Icons.account_circle_outlined, size: 30,),
             label: 'User Profile',
@@ -80,6 +86,7 @@ class _HomePageState extends State<HomePage> {
 
         ChaptersTab(),
 
+        BadgesTab(),
         UserTab(),
       ][currentPageIndex],
     );
