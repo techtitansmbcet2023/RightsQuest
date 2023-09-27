@@ -69,8 +69,8 @@ class _HomePageState extends State<HomePage> {
             label: 'Chapters',
           ),
           NavigationDestination(
-            selectedIcon: Icon(Icons.mediation, size: 40,),
-            icon: Icon(Icons.mediation_outlined, size: 30,),
+            selectedIcon: Icon(Icons.local_police_rounded, size: 40,),
+            icon: Icon(Icons.local_police, size: 30,),
             label: 'Badges',
           ),
           NavigationDestination(
