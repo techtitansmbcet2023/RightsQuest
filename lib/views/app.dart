@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rights_quest/views/ChaptersTab.dart';
 import 'package:rights_quest/views/home.dart';
 
 class App extends StatelessWidget {
@@ -66,11 +67,9 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: <Widget>[
           Home(),
-          Container(
-            color: Colors.green,
-            alignment: Alignment.center,
-            child: const Text('Page 2'),
-          ),
+
+          ChaptersTab(),
+
           Container(
             color: Colors.blue,
             alignment: Alignment.center,
