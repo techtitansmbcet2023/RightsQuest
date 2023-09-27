@@ -7,7 +7,7 @@ class TopAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return PreferredSize(
-      preferredSize: preferredSize,
+      preferredSize: Size.fromHeight(100), // Increase the height to 150
       child: Container(
         color: Theme.of(context).primaryColor,
         child: SafeArea(
@@ -35,5 +35,5 @@ class TopAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(50);
+  Size get preferredSize => Size.fromHeight(100); // Update the preferredSize here as well
 }

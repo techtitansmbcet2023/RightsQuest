@@ -12,7 +12,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
 
-        colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFF89E1E1)),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFFFFFFFF)),
         useMaterial3: true,
       ),
 
