@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rights_quest/views/badges.dart';
+import 'package:rights_quest/views/badges_tab.dart';
 import 'package:rights_quest/views/chapters_tab.dart';
 import 'package:rights_quest/views/home.dart';
 import 'package:rights_quest/views/user_tab.dart';
