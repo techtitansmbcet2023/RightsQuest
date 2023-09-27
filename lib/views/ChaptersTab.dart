@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'quiz_intro.dart';
 
 class ChaptersTab extends StatelessWidget {
   const ChaptersTab({super.key});
@@ -13,7 +14,7 @@ class ChaptersTab extends StatelessWidget {
           itemBuilder: (BuildContext context, int index) {
             return InkWell(
               onTap: () {
-
+                Navigator.push(context, MaterialPageRoute(builder: (context) => QuizPage()));
               },
 
               borderRadius: BorderRadius.circular(10),
