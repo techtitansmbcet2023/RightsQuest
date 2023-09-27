@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:rights_quest/widgets/settings.dart';
 
+
 class UserTab extends StatelessWidget {
   const UserTab({super.key});
+
+
 
   @override
   Widget build(BuildContext context) {

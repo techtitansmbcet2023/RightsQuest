@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rights_quest/widgets/top_app_bar.dart';
 import 'quiz.dart';
 
+
 class QuizIntroPage extends StatelessWidget {
   const QuizIntroPage({super.key});
 
@@ -38,7 +39,7 @@ class QuizIntroPage extends StatelessWidget {
               ],
             ),
           ],
-          
+
         ),
       ),
     );
