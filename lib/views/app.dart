@@ -12,7 +12,8 @@ class App extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
 
-        colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFFFFFFFF)),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFFF40000)),
+        primaryColor: Color(0xFFFFFFFF),
         useMaterial3: true,
       ),
 
@@ -45,9 +46,9 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Theme.of(context).primaryColor,
         indicatorShape: ContinuousRectangleBorder(
           borderRadius: BorderRadius.circular(10),
-          side: const BorderSide(color: Color.fromARGB(255, 235, 235, 235),width: 15),
+          side: const BorderSide(color: Color.fromARGB(255, 255, 79, 79),width: 15),
         ),
-        indicatorColor: const Color.fromARGB(255, 235, 235, 235),
+        indicatorColor: const Color.fromARGB(255, 255, 79, 79),
         labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
         onDestinationSelected: (int index) {
           setState(() {
@@ -74,15 +75,13 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
 
-      body: SafeArea(
-        child: <Widget>[
-          Home(),
+      body: <Widget>[
+        Home(),
 
-          ChaptersTab(),
+        ChaptersTab(),
 
-          UserTab(),
-        ][currentPageIndex],
-      ),
+        UserTab(),
+      ][currentPageIndex],
     );
   }
 }

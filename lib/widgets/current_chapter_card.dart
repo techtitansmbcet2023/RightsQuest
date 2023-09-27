@@ -8,7 +8,7 @@ class CurrentChapterCard extends StatelessWidget {
     return Container(
       height: 450,
       width: double.infinity,
-      decoration: BoxDecoration(color: Colors.red,borderRadius: BorderRadius.circular(15)),
+      decoration: BoxDecoration(color: Color(0xFF009099),borderRadius: BorderRadius.circular(15)),
     );
   }
 }
