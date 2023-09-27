@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rights_quest/views/ChaptersTab.dart';
 import 'package:rights_quest/views/home.dart';
+import 'package:rights_quest/widgets/top_app_bar.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -34,10 +35,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: TopAppBar(),/*AppBar(
         title: Text("GAMEE"),
         backgroundColor: Colors.lightGreen,
-      ),
+      ),*/
       bottomNavigationBar: NavigationBar(
         onDestinationSelected: (int index) {
           setState(() {
