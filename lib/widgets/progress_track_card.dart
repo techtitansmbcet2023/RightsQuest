@@ -6,7 +6,7 @@ class ProgressTrackCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 450,
+      height: 150,
       width: double.infinity,
       decoration: BoxDecoration(color: Colors.red,borderRadius: BorderRadius.circular(15)),
     );

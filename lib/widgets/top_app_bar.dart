@@ -13,24 +13,18 @@ class TopAppBar extends StatelessWidget implements PreferredSizeWidget {
         child: SafeArea(
           child: Row(
             children: [
-              VerticalDivider(
-                width: 20,
-                thickness: 0,
-              ),
+              SizedBox(width: 20), // Add spacing using SizedBox
               SvgPicture.asset(
                 'lib/assets/icons/Bulb.svg',
-                height: 20.0, // Set the desired height
-                width: 20.0,  // Set the desired width
+                height: 20.0,
+                width: 20.0,
               ),
-              VerticalDivider(
-                width: 20,
-                thickness: 0,
+              SizedBox(width: 20), // Add spacing using SizedBox
+              Text(
+                "100",
+                style: TextStyle(fontSize: 20),
               ),
-              Text("100", style: TextStyle(fontSize: 20),),
-              VerticalDivider(
-                width: 20,
-                thickness: 2,
-              ),
+              SizedBox(width: 20), // Add spacing using SizedBox
               Spacer(),
               Icon(Icons.bolt),
             ],
@@ -43,6 +37,3 @@ class TopAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => const Size.fromHeight(50);
 }
-
-
-
