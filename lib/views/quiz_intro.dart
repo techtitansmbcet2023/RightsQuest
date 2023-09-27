@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:rights_quest/widgets/top_app_bar.dart';
+import 'quiz.dart';
 
-class QuizPage extends StatelessWidget {
-  const QuizPage({super.key});
+class QuizIntroPage extends StatelessWidget {
+  const QuizIntroPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +29,12 @@ class QuizPage extends StatelessWidget {
               children: [
                 TextButton(child: Text("Cancel"), onPressed: (){Navigator.pop(context);}),
 
-                TextButton(child: Text("Next"), onPressed: (){}),
+                TextButton(child: Text("Next"), onPressed: () {
+                  Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => QuizPage()),
+                  );
+                },
+                ),
               ],
             ),
           ],

@@ -14,7 +14,7 @@ class ChaptersTab extends StatelessWidget {
           itemBuilder: (BuildContext context, int index) {
             return InkWell(
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => QuizPage()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => QuizIntroPage()));
               },
 
               borderRadius: BorderRadius.circular(10),
