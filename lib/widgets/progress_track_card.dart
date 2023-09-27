@@ -8,7 +8,8 @@ class ProgressTrackCard extends StatelessWidget {
     return Container(
       height: 150,
       width: double.infinity,
-      decoration: BoxDecoration(color: Colors.red,borderRadius: BorderRadius.circular(15)),
+      decoration: BoxDecoration(color: Colors.red,borderRadius: BorderRadius.circular(15),border: Border.all(color: Colors.black,width: 2)
+      ),
     );
   }
 }

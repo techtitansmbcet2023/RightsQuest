@@ -15,7 +15,7 @@ class _SettingsState extends State<Settings> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      decoration: BoxDecoration(color: Colors.green,borderRadius: BorderRadius.circular(20)),
+      decoration: BoxDecoration(color: Colors.green,borderRadius: BorderRadius.circular(20),border: Border.all(color: Colors.black,width: 2)),
 
       child: Container(
         child: Padding(

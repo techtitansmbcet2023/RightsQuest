@@ -11,8 +11,9 @@ class Badges extends StatelessWidget {
       child: Container(
         width: double.infinity,
         height: 200,
-        decoration: BoxDecoration(color: Colors.lime,borderRadius: BorderRadius.circular(10)),
+        decoration: BoxDecoration(color: Colors.lime,borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.black,width: 2),
       ),
+    ),
     );
   }
 }

@@ -4,6 +4,7 @@ import 'package:rights_quest/views/chapters_tab.dart';
 import 'package:rights_quest/views/home.dart';
 import 'package:rights_quest/views/user_tab.dart';
 import 'package:rights_quest/widgets/top_app_bar.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -12,7 +13,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-
+        textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
         colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFFF40000)),
         primaryColor: Color(0xFFFFFFFF),
         useMaterial3: true,
