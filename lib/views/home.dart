@@ -22,6 +22,8 @@ class _HomeState extends State<Home> {
           ),
           SizedBox(height: 16), // Add space between the cards (adjust the height as needed)
           ProgressTrackCard(),
+
+          SizedBox(height: 10), // Add space between the cards (adjust the height as needed)
         ],
       ),
     );
