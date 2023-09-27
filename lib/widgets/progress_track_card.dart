@@ -10,6 +10,11 @@ class ProgressTrackCard extends StatelessWidget {
       width: double.infinity,
       decoration: BoxDecoration(color: Colors.red,borderRadius: BorderRadius.circular(15),border: Border.all(color: Colors.black,width: 2)
       ),
-    );
+    child: Center(
+    child: Text("Progress Tracker",style: TextStyle(
+    fontSize: 28,
+    color: Colors.white,
+    ),),
+    ),);
   }
 }

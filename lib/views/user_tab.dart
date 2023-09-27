@@ -18,7 +18,7 @@ class UserTab extends StatelessWidget {
           Container(
             width: double.infinity,
             height: 200,
-            decoration: BoxDecoration(color: Colors.deepOrange,borderRadius: BorderRadius.circular(10),
+            decoration: BoxDecoration(color: Colors.deepOrange ,borderRadius: BorderRadius.circular(10),
               border: Border.all(
             color: Colors.black, // Set the border color here
               width: 2.0, // Set the border width here
@@ -34,7 +34,10 @@ class UserTab extends StatelessWidget {
 
                     SizedBox(width: 30,),
 
-                    Flexible(child: Text("Hello name ",softWrap: true,)),
+                    Flexible(child: Text("Tech Titans ",softWrap: true,style: TextStyle(
+                      fontSize: 36,
+                      color: Colors.white,fontWeight: FontWeight.w600,
+                    ),)),
 
                   ],
                 ),

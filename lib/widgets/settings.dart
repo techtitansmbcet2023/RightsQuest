@@ -15,7 +15,7 @@ class _SettingsState extends State<Settings> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      decoration: BoxDecoration(color: Colors.green,borderRadius: BorderRadius.circular(20),border: Border.all(color: Colors.black,width: 2)),
+      decoration: BoxDecoration(color: Colors.green,borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.black,width: 2)),
 
       child: Container(
         child: Padding(
@@ -23,7 +23,7 @@ class _SettingsState extends State<Settings> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(widget.settingName),
+              Text(widget.settingName,style: TextStyle(color: Colors.white, fontSize: 20,fontWeight: FontWeight.w800,),),
 
               /*Switch(
                 // This bool value toggles the switch.
